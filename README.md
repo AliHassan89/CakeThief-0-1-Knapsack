@@ -57,6 +57,6 @@ You are a renowned thief who has recently switched from stealing precious metals
 6. else if the weight of i-1 item in cakeTypes is less than j (which will go up to max weight the bag can carry) then we have to check
 if value of cake i-1 + memo of i-1, and j (current weight) - cakeTypes[i-1] weight is more or memo of i-1 and j is more. The one with larger weight is picked up.
 
-7. else if the weight of the item is more than the maximum weight the bag can carry, in that case we will take the result from previous block. It will look like this memo[i][j] with previous value which will be memo[i-1][j]
+7. else if the weight of the item is more than the maximum weight the bag can carry (at this time bag can carry a maximum weight of j), in that case we will take the result from previous block. It will look like this memo[i][j] with previous value which will be memo[i-1][j]
 
 8. In the end memo table will be filled up and return memo[n][capacity]
