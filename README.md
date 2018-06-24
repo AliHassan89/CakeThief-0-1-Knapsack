@@ -52,7 +52,7 @@ You are a renowned thief who has recently switched from stealing precious metals
 
 4. Start another loop a nested loop which will start from 0 to capacity where capacity is received as parameter.
 
-5. if i OR j are 0 then initialize that block in memo table to 0. Which means in memo table the first row and first column will be all 0's
+5. if i OR j are 0 then initialize that block in memo table to 0. Which means in memo table the first row and first column will be all 0's. This is because when capacity of bag is 0 (the bag can hold maximum of 0 weight) then we cannot put anything in the bag hence the first row will be 0. First coloumn will be initialized to 0 because we don't have any item avaialble whose weight is 0 and that can be picked up.
 
 6. else if the weight of i-1 item in cakeTypes is less than j (which will go up to max weight the bag can carry) then we have to check
 if value of cake i-1 + memo of i-1, and j (current weight) - cakeTypes[i-1] weight is more or memo of i-1 and j is more. The one with larger weight is picked up.
